@@ -13,9 +13,8 @@ $(function() {
     for (var i = 0; i < burgers.length; i++) {
       var new_elem =
         "<li>" +
-        burgers[i].id + 
-        ". "+burgers[i].name +
-        "<button class='change-devour' data-id='" +
+        burgers[i].name + 
+        "<button class='change-devour btn btn-success' data-id='" +
         burgers[i].id +
         "' data-newdevour='" +
         !burgers[i].devoured +
@@ -47,7 +46,7 @@ $(function() {
     var newDevour = $(this).data("newdevour")===true;
 
     var newDevourState = {
-      devoured: newDevour
+      devoured: newDevour,
     };
 
     // Send the PUT request.
@@ -68,12 +67,8 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca")
-        .val()
-        .trim(),
-      devoured: $("[name=devoured]:checked")
-        .val()
-        .trim()
+      name: $("#ca").val().trim(),
+      devoured: $("[name=devoured]:checked").val().trim()
     };
 
     // Send the POST request.
