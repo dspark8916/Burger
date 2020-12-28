@@ -13,7 +13,7 @@ $(function() {
     for (var i = 0; i < burgers.length; i++) {
       var new_elem =
         "<li>" +
-        burgers[i].name + 
+        burgers[i].burger_name + 
         "<button class='change-devour btn btn-success' data-id='" +
         burgers[i].id +
         "' data-newdevour='" +
@@ -67,7 +67,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#name").val().trim(),
+      burger_name: $("#burger_name").val().trim(),
       devoured: $("[name=devoured]:checked").val().trim()
     };
 
