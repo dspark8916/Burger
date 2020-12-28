@@ -20,48 +20,53 @@
       src="https://www.bestfamilyguide.com/gallery/3-best-juicy-homemade-beef-burger-recipes-pictures/3-Best-Juicy-Homemade-Beef-Burger-Recipes1.jpg"
       alt="burger image" style="height: 250px; width: 400px;">
   </div>
-<br>
-<br>
+  <br>
+  <br>
   <div class="container">
-
-    <div class="card mx-auto" style="width: 18rem;">
-      <div class="card-header">
-        Burger Menu
+    <div class="row">
+      <div class="col">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-header">
+            Burger Menu
+          </div>
+          <ol class="list-group list-group-flush">
+            <li class="list-group-item">Hamburger</li>
+            <li class="list-group-item">Cheese Burger</li>
+            <li class="list-group-item">Bacon Cheese Burger</li>
+            <li class="list-group-item">Guacamole Burger</li>
+            <li class="list-group-item">Veggie Burger</li>
+          </ol>
+        </div>
       </div>
-      <ol class="list-group list-group-flush">
-        <li class="list-group-item">Hamburger</li>
-        <li class="list-group-item">Cheese Burger</li>
-        <li class="list-group-item">Bacon Cheese Burger</li>
-        <li class="list-group-item">Guacamole Burger</li>
-        <li class="list-group-item">Veggie Burger</li>
-      </ol>
+      <br>
+      <div class="col">
+        <div class="card mx-auto text-center" style="width: 40rem;">
+          <h2>Burgers not yet eaten!!</h2>
+
+          <ul id="notDevouredBurgers"></ul>
+
+          <h2>Burgers that have been devoured!!!</h2>
+
+          <ul id="devouredBurgers"></ul>
+
+          <form class="create-form">
+            <div class="form-group">
+              <input type="text" placeholder="Burger Name" id="burger_name" name="name" />
+            </div>
+
+            <div class="form-group">
+              <input type="radio" name="devoured" value="1" checked /> Hungry?? Let's Eat!!!<br />
+            </div>
+
+            <button type="submit">Let's Eat!!</button>
+
+            <p class="card-text">
+              Click "Let's Eat" to devour your burger!!!
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
-    <br>
-    <div class="card mx-auto text-center" style="width: 40rem;">
-    <h2>Burgers not yet eaten!!</h2>
-
-    <ul id="notDevouredBurgers"></ul>
-
-    <h2>Burgers that have been devoured!!!</h2>
-
-    <ul id="devouredBurgers"></ul>
-
-    <form class="create-form">
-      <div class="form-group">
-        <input type="text" placeholder="Burger Name" id="burger_name" name="name" />
-      </div>
-
-      <div class="form-group">
-        <input type="radio" name="devoured" value="1" checked /> Hungry?? Let's Eat!!!<br />
-      </div>
-
-      <button type="submit">Let's Eat!!</button>
-
-      <p class="card-text">
-        Click "Let's Eat" to devour your burger!!!
-      </p>
-    </form>
-  </div>
   </div>
   <br>
   <br>
