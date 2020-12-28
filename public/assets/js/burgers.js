@@ -12,7 +12,7 @@ $(function() {
 
     for (var i = 0; i < burgers.length; i++) {
       var new_elem =
-        "<li>" +
+        "<li class='bg-dark' style='font-size: 25px;'>" +
         burgers[i].burger_name + 
         "<button class='change-devour btn btn-success' data-id='" +
         burgers[i].id +
@@ -23,7 +23,7 @@ $(function() {
       if (burgers[i].devoured) {
         new_elem += "Munching Time!";
       } else {
-        new_elem += "All Gone!";
+        new_elem += "Have Another!";
       }
 
       new_elem += "</button>";
