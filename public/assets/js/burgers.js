@@ -3,13 +3,14 @@ $(function() {
   $.ajax("/burgers", {
     type: "GET"
   }).then(function(data) {
+    console.log(data);
+
     var devouredElem = $("#devouredBurgers");
     var notdevouredElem = $("#notDevouredBurgers");
 
     var burgers = data.burgers;
-    var len = burgers.length;
 
-    for (var i = 0; i < len; i++) {
+    for (var i = 0; i < burgers.length; i++) {
       var new_elem =
         "<li>" +
         burgers[i].id + 
@@ -29,7 +30,7 @@ $(function() {
       new_elem += "</button>";
 
       new_elem +=
-        "<button class='delete-burger' data-id='" +
+        "<button class='delete-burger btn btn-danger' data-id='" +
         burgers[i].id +
         "'>DELETE!</button></li>";
 

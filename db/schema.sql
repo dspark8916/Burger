@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE IF NOT EXISTS burgers_db;
+CREATE DATABASE burgers_db;
 USE burgers_db;
 
 -- If the table already exists, remove it before trying to create the table again
