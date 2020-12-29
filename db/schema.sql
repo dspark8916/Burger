@@ -7,8 +7,9 @@ DROP TABLE IF EXISTS burgers;
 
 -- Create the burgers table
 CREATE TABLE burgers (
-    id int NOT NULL AUTO_INCREMENT,
+    id INT AUTO_INCREMENT NOT NULL,
     burger_name varchar(255) NOT NULL,
     devoured BOOLEAN DEFAULT false,
+    createdAt TIMESTAMP NOT NULL,
     PRIMARY KEY (id)
 );
